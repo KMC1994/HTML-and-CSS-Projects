@@ -1,0 +1,20 @@
+h1 {
+	color: #6495ED;
+	font-weight: bold;
+	font-size: 60px; 
+	font-family: Calibri;
+	text-align: center;
+	text-shadow: 2px 2px 8px #ADD8E6;
+}
+h2 {
+	color: #3366cc;
+	font-family: Calibri;
+}
+ul {
+	color: #9abaf3;
+	list-style-type: circle;
+}
+ol {
+	color: #9abaf3;
+	list-style-type: lower-roman;
+}
