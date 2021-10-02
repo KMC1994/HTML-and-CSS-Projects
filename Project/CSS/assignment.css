@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1,h2,h3 {
+    color: darkblue;
+}
+
+p {
+    font-weight: 900;
+}
+
+img {
+    border: 2px dashed red;
+}
