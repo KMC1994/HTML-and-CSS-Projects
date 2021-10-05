@@ -1,0 +1,291 @@
+html {
+    font-family: Verdana, Geneva, Tahoma;
+    font-size: 60%;
+}
+
+body {
+    font-size: 16px;
+    margin: 2px;
+    font-family: Verdana, Geneva, Tahoma;
+    line-height: 1.5;
+    color: #fff;
+    background-color:#adceff;
+}
+
+footer,
+nav {
+    display:block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, Tahoma;
+}
+
+h1 {
+    padding-top: 50px;
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+}
+
+p {
+    font-family: 'Trebuchet MS';
+    text-align: left;
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 60px;
+}
+
+
+/*---------------------
+MENU
+----------------------*/
+
+.wrap {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    top: 0;
+    left: 0;
+    /*To the top edge of the screen*/
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0)
+
+}
+
+.menu {
+    font-family: Verdana, Geneva;
+    text-align: center;
+    display: inline;
+    margin: 2px;
+    padding: 2px;
+}
+
+.menu li {
+    color: #fff;
+    display: inline-block;
+    margin-right: -2px;
+    position: relative;
+    padding: 12px 40px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background-color: #17A9C1;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #fff;
+    color: #17A9C1;
+}
+
+/*-------------------------
+HOME SECTION STYLES
+--------------------------*/
+
+#home {
+    background: url(../images/Beach.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 250px; /*this is the spacer before the main title logo*/
+    padding-bottom: 500px; /*this is spacer after the main title logo*/
+    color: #fff;
+}
+
+.head-main {
+    color: #FFF;
+    letter-spacing: 8pt;
+    font-size: 4.5em;
+    text-align: center;
+    font-family: Geneva, Tahoma;
+    line-height: 3;
+    font-weight: 700;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+
+/*------------------
+GALLERY STYLE
+------------------*/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border: #17A9C1;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 10px rgba(51, 197, 255, 0.493);
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border: 1px solid #17A9C1;
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.photo-container {
+    text-align: center;
+    margin: 10px auto;
+    width: 300px;
+    height: 200px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+}
+
+.photo-overlay {
+    color: #FFF;
+    font-size: xx-large;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; /*For centering text inside .photo-pverlay */
+    align-items: center;
+    background: rgba(0,0,0,0);
+}
+
+/*-----------------
+photo-overlay transitions
+------------------*/
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+/*------------------
+reservation style
+-------------------*/
+
+
+#reservations {
+    background-color: rgba (0,0,0,0);
+}
+
+.reservations {
+    width: 50%;
+    padding: 10px;
+    margin: 0px auto;
+    border: #17A9C1;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px 10px rgba(51, 197, 255, 0.493);
+
+}
+
+.reservations h2 {
+    text-align: center;
+    margin: 0 auto;
+    color: #addeff;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 2pt;
+    word-spacing: 2pt;
+}
+
+.reservations p {
+    text-align: center;
+    padding-top: 10px;
+    color: #addeff;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.reservations form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #addeff;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #17A9C1;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: url(../images/Beach.jpg);
+    font-family: Verdana, Geneva;
+}
+
+.reservations input[type="text"] {
+    font-size: 15px;
+    font-weight: 600;
+    color: #17A9C1;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    margin: 10px 1em;
+    background: #fff;
+    border: #fff;
+    border-radius: 25px;
+    font-family: Verdana, Geneva;
+}
+
+
+.form-spacer {
+    color: #FFf;
+    padding: 30px 39px;
+}
+
+.form-spacer:hover {
+    color: #17A9C1;
+}
